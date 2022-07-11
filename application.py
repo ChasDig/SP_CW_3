@@ -36,4 +36,5 @@ def error_500(e):
     return render_template("error_type.html", error_type=500), 500
 
 
-app.run()
+if __name__ == '__main__':
+    app.run()

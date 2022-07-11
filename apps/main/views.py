@@ -29,7 +29,7 @@ def main_page():
 def api_posts_page():
 
     response = poster_and_comments.get_all_posters()
-    logger_one.info(f'Запрос к api/posts/')
+    # logger_one.info(f'Запрос к api/posts/')
     return jsonify(response)
 
 
